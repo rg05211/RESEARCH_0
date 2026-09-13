@@ -1,0 +1,47 @@
+Title: Literature Review — Incremental Sheet Hydroforming (2015–2025)
+
+Authors / Compiled by: [Your name]
+Date: 2026-09-13
+
+1. Executive summary
+This document summarizes peer‑reviewed research and review articles from 2015–2025 on Incremental Sheet Hydroforming (ISH/ISHF). Focus areas: process fundamentals, materials and forming limits, process parameters, FEM and multiscale modeling, and recent advances including hybrid and adaptive control methods.
+
+2. Table: Columnized literature entries
+(Each row below is a table row. In Word you can Insert → Table and paste each cell.)
+
+Reference (title / authors / link) | Year | Type | Objective | Methods | Key findings | Relevance / Design implications
+--- | ---: | --- | --- | --- | --- | ---
+A Comprehensive Review on the Incremental Sheet Forming of Polycarbonate — A. Formisano, M. Durante. https://doi.org/10.3390/polym16213098 | 2024 | Review article | Review ISF/ISHF fundamentals for polymer sheets; discuss process limits, defects, and modeling | Literature synthesis, process mapping, discussion of FEM approaches for polymers | Summarizes forming limits for polymers, influence of toolpath, lubrication, temperature control; highlights hybrid approaches (thermal/ISF) to improve formability | Useful for ISH with polymer sheets; guidance on process parameters, heating strategies, and FEM boundary conditions
+Advanced Incremental Sheet Forming of Hard-to-Work Materials — Special Issue (Editor: A. Formisano) — MDPI Materials (collection) https://www.mdpi.com/journal/materials/special_issues/OP34SRJ0GH | 2023 | Special issue (multiple articles) | Collection addressing ISF/ISHF of hard-to-form materials, process optimization, and simulation | Multiple experimental studies and FEM papers covering steels, high-strength alloys, and process variants | Presents recent advances in forming limits extension techniques, toolpath optimization, and process monitoring | Source of multiple applied studies on ISH of difficult alloys; good reference for comparative methods
+Experimental Evaluation of a System to Control the Incremental Forming of Aluminum Alloy Type 1050 — S. K. Ghazi, M. Y. Salloom, A. S. Bedan. https://etasr.com/index.php/ETASR/article/view/8387 | 2024 | Research article | Evaluate hydraulic support in ISHF of Al1050; study formability and thinning | Experimental forming trials, measurements of thickness, FEM correlation | Hydraulic support improves formability and reduces localized thinning; process parameters (feed, step depth) critical | Demonstrates benefits of fluid support in ISHF; informs fixture and process design for aluminum sheets
+Optimization of Forming Parameters in Incremental Sheet Forming of AA3003-H18 Sheets Using Taguchi Method — M. Murugesan et al. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8876622/ | 2022 | Research article | Optimize ISF parameters (step depth, feed rate, tool diameter) for AA3003-H18 using Taguchi | Experimental DOE (Taguchi), surface roughness and thickness evaluation | Identifies optimal parameter sets to minimize thinning and improve surface finish; step depth is dominant factor | Practical guidance for parameter selection in ISH of aluminum alloys; methodology transferable to ISHF
+Efficient Multiscale Simulations of Incremental Sheet Forming Using ... — (Springer) https://link.springer.com/article/10.1007/s40192-025-00427-0 | 2025 | Research article | Develop multiscale FEM strategies for ISF to capture microstructure influence and predict forming limits | Multiscale crystal plasticity coupled with macro FEM, numerical validation | Improves accuracy of forming limit prediction; highlights importance of material model fidelity under large strains | Use advanced material models in FEM when predicting ISH forming limits for high‑strain applications
+Incremental Sheet Hydroforming: process overview and recent developments — (various authors in special issues and conference papers) | 2018–2024 | Conference papers / articles | Various studies on ISHF tool designs, fluid medium effects, and adaptive control | Experimental setups, CFD for fluid support, dynamic toolpath control | Fluid medium (hydraulic backing) and adaptive control increase achievable depth and reduce defects | Suggests hybrid process designs integrating fluid support and active control for ISH
+Optimization and control of ISF/ISHF processes — selected studies (DOE, ANN, adaptive control) — multiple authors | 2016–2024 | Research articles | Explore parameter optimization and process control using statistical and ML methods | Taguchi, RSM, ANN, adaptive control loops, closed‑loop force feedback | Statistical and ML methods help predict thinning and surface quality; closed‑loop control improves consistency | Indicates promising routes for industrializing ISHF with predictive control and monitoring
+
+3. Thematic synthesis (short)
+- Process fundamentals: ISHF couples incremental deformation by a localized punch with fluid backing (hydrostatic support) to improve formability and reduce thinning compared to dry ISF. Key variables: toolpath strategy, step depth, feed rate, tool diameter, lubrication, and hydrostatic pressure/support.
+- Materials & forming limits: Aluminum alloys (1xxx, 3xxx, 5xxx series) widely studied; high-strength steels and difficult-to-form alloys require heated or hybrid approaches. ISHF extends forming limits relative to dry ISF, but limits depend strongly on process parameters and support configuration.
+- FEM & modeling: Advances include explicit dynamic FEM for large deformation, coupled CFD‑structural models for fluid‑solid interaction in hydroforming support, and multiscale crystal plasticity to predict strain localization and forming limits.
+- Process control & optimization: DOE (Taguchi, RSM), machine learning (ANN) and closed‑loop force/position control reduce defects and improve repeatability. Adaptive toolpath strategies and variable step depth are effective.
+- Gaps and challenges: Standardized forming limit datasets for ISHF are limited; more coupled CFD‑FEM experimental validation needed; scale-up and cycle time/automation for industrial adoption are open issues.
+
+4. Practical recommendations for researchers and designers
+- For aluminum ISHF, prioritize experimentation on hydraulic backing pressure and toolpath optimization; use Taguchi or RSM designs to identify dominant parameters (step depth, feed rate).
+- Use coupled CFD‑FEM or at least calibrated hydrostatic support models when simulating ISHF; consider multiscale material models for high‑strain predictions.
+- Implement closed‑loop force or position control to manage tool–sheet interaction and prevent defects; consider real‑time thickness estimation via process sensors for adaptive control.
+- For hard‑to‑form materials, explore localized heating (induction, friction) combined with hydrostatic support to extend formability.
+
+5. Selected references (links)
+- Formisano A, Durante M. A Comprehensive Review on the Incremental Sheet Forming of Polycarbonate. Polymers. 2024. https://doi.org/10.3390/polym16213098
+- MDPI Materials Special Issue: Advanced Incremental Sheet Forming of Hard-to-Work Materials. 2023. https://www.mdpi.com/journal/materials/special_issues/OP34SRJ0GH
+- Ghazi SK, Salloom MY, Bedan AS. Experimental Evaluation of a System to Control the Incremental Forming of Aluminum Alloy Type 1050. ETASR. 2024. https://etasr.com/index.php/ETASR/article/view/8387
+- Murugesan M, Yu J-H, Jung K-S, Cho S-M, Bhandari KS, Lee C-W. Optimization of Forming Parameters in Incremental Sheet Forming of AA3003-H18 Sheets Using Taguchi Method. Materials. 2022. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8876622/
+- Multiscale Simulations article (Springer). 2025. https://link.springer.com/article/10.1007/s40192-025-00427-0
+
+6. Appendix: Suggested Word formatting (optional)
+- Title: Centered, Bold, 16–18 pt.
+- Headings: Heading 1/2 styles.
+- Table: Fit to page width; allow rows to wrap text.
+- Page layout: Two columns; gutter 0.5 cm; top/bottom margins 2 cm.
+
