@@ -1,0 +1,50 @@
+Title: Literature Review — Structural and Thermal Design of Electric Two‑Wheeler Battery Enclosures
+
+Authors / Compiled by: [Your name]
+Date: 2026-09-13
+
+1. Executive summary
+This literature review summarizes recent (2015–2025) peer‑reviewed research and relevant standards for the structural and thermal design of battery enclosures for electric two‑wheelers (ETWs). It highlights material comparisons (aluminum vs polymers/composites), FEM and modal analysis practices, thermal‑runaway mitigation strategies, test protocols, and design implications for ETW applications.
+
+2. Table: Columnized literature entries
+(Each row below is a table row. In Word you can Insert → Table and paste each cell.)
+
+Reference (title / authors / link) | Year | Type | Objective | Methods | Key findings | Relevance / Design implications
+--- | ---: | --- | --- | --- | --- | ---
+Structural assessment of electric two‑wheeler battery enclosure: thermal and structural study — R. K. Chidambaram, P. R. Pedapati, P. R. Kanna, D. Taler, T. Sobota, J. Taler. (https://doi.org/10.1007/s10973-024-13458-0) | 2024 | Peer‑reviewed paper | Compare candidate materials & isolation gaps; structural & thermal assessment for ETW battery enclosure | FEM (static, dynamic, modal), FMMEA risk assessment; material comparisons (AL6061, Q235, C22000, DC01, Teflon) | AL6061 preferred for strength/low deformation; metal enclosures show major deformation >500 Hz; recommended min gaps: metal 2.5 mm, Teflon 10 mm | Primary computational baseline; adopt AL6061 for weight/strength tradeoff; validate modal/FEM results with experimental modal tests and coupled thermal‑structural tests
+Battery Housing for Electric Vehicles: A Durability Assessment Review — M. Jimenez‑Martinez, J. L. Valencia‑Sánchez, S. G. Torres‑Cedillo, J. Cortés‑Pérez. (https://www.mdpi.com/2411-9660/8/6/113) | 2024 | Review paper | Survey durability, fatigue, and damage models for battery housings, including composites and polymers | Literature synthesis; comparison of modeling approaches and durability prediction methods | Highlights variability in polymer/composite properties; discusses fatigue modelling, environmental effects, and lifecycle concerns | Use for selecting material models for long‑term fatigue; include environmental aging/reliability tests in ETW validation
+Structural Design and Simulation of Battery Enclosure for an Electric Vehicle against Mechanical Abuse Test — V. Bharodiya, D. Sisodia, P. Singh (SAE technical paper 2023‑28‑1345) (https://doi.org/10.4271/2023-28-1345) | 2023 | SAE technical paper | Demonstrate FE simulation for mechanical abuse tests (crush, impact) | Abaqus FEA: static crush, impact simulations, optimization | FE methods capture mechanical abuse modes; guidance on boundary conditions and contact definitions | Practical FE workflows and test-correlated settings for mechanical abuse simulations
+UL 2580 — Batteries for Use in Electric Vehicles (standard) | latest | Standard | Safety tests & requirements for EV batteries (mechanical, thermal, electrical) | Normative procedures (mechanical shock, vibration, thermal abuse, isolation) | Prescribes acceptance tests and pass/fail criteria | Use as primary reference for pack-level testing; adapt for ETW scale
+UL 2271 — Batteries for Light Electric Vehicles (standard) | latest | Standard | Safety requirements for batteries in light EVs (scooters, e-bikes) | Mechanical shock, vibration, overcharge, short circuit, thermal abuse tests | Tailored to light mobility platforms | Reference for ETW‑specific acceptance tests and criteria
+SAE J2464 — Electric Vehicle Battery Abuse Testing (recommended practice) | latest | Standard/practice | Guidelines for abuse tests: thermal runaway, crush, penetration, fire exposure | Test protocols, instrumentation and reporting | Defines repeatable abuse test methods and reporting | Use for designing thermal‑runaway test setups and documentation
+SAE J2929 — Safety Standard for Electric and Hybrid Vehicle Propulsion Battery Systems | latest | Standard | Structural & electrical safety requirements for propulsion battery systems | Crashworthiness, electrical isolation, mechanical mounting requirements | Broad EV standard for pack/system integration | Apply to mounting interfaces and crash scenarios where relevant to ETWs
+ISO 12405‑3 — Test procedures for lithium-ion traction battery packs (part 3) | latest | Standard | Specifies vibration, shock, drop, electrical, thermal tests for traction packs | Detailed test sequences, environmental conditioning, acceptance criteria | International test procedures for traction batteries | Use for harmonized test planning when targeting multiple markets
+ISO 6469‑1 — On‑board rechargeable energy storage system safety requirements | latest | Standard | Safety requirements for on‑board energy storage systems (RESS) | Safety requirements for mechanical, thermal, electrical hazards | High‑level system safety requirements | Use for high‑level design compliance and risk assessments
+UL 9540A — Test method for evaluating thermal runaway fire propagation in battery energy storage systems | latest | Test method | Evaluate propagation and heat release during thermal runaway | Calorimetry, propagation test methods to quantify thermal behaviour | Metrics for propagation thresholds and mitigations | Adapt scaled tests or CFD to assess ETW pack propagation risk and venting strategies
+
+3. Thematic synthesis (short)
+- Materials: Aluminum alloys (e.g., Al6061) give best stiffness-to-weight and low deformation; steels offer cost and higher yield; polymers/composites reduce weight and add insulation but increase deformation and require larger mechanical gaps. Hybrid shells (metal outer + polymer liner) are promising.
+- Modelling: Best practice is coupled thermal → structural simulations, explicit dynamic models for impact, modal and random vibration analyses, and validated material models (rate/temperature dependence).
+- Testing: Follow UL 2271/2580 and ISO 12405-3 for mechanical and thermal tests; use UL 9540A or scaled equivalent for propagation studies. Include vibration, shock, crush, thermal cycling, and ingress tests.
+- Risk assessment: Combine FMEA/FMMEA with FEM results to prioritize design changes and testing.
+- Gaps: Need more full‑scale multi‑physics experimental validation, long‑term environmental aging studies, and ETW‑specific standards.
+
+4. Practical recommendations for designers
+- Use Al6061 or similar aluminum for primary structural shell where weight is critical; use steel if cost and local yield resistance are prioritized.
+- Ensure minimum mechanical isolation gaps consider thermal expansion and tolerance stacking; use anchor study gaps (metal 2.5 mm, Teflon 10 mm) as starting points and validate.
+- Integrate vents/pressure relief early; evaluate venting via CFD and scaled propagation tests.
+- Validate FEM with component modal testing, vibration rig tests, and full pack mechanical/thermal abuse tests.
+- Include environmental aging and corrosion testing in the qualification plan.
+
+5. References (selected)
+- Chidambaram RK, Pedapati PR, Kanna PR, Taler D, Sobota T, Taler J. Structural assessment of electric two‑wheeler battery enclosure: thermal and structural study. 2024. https://doi.org/10.1007/s10973-024-13458-0
+- Jimenez‑Martinez M, Valencia‑Sánchez JL, Torres‑Cedillo SG, Cortés‑Pérez J. Battery Housing for Electric Vehicles: A Durability Assessment Review. Designs. 2024. https://www.mdpi.com/2411-9660/8/6/113
+- Bharodiya V, Sisodia D, Singh P. Structural Design and Simulation of Battery Enclosure for an EV against Mechanical Abuse Test. SAE 2023-28-1345. https://doi.org/10.4271/2023-28-1345
+- UL 2580; UL 2271; UL 9540A; SAE J2464; SAE J2929; ISO 12405‑3; ISO 6469‑1.
+
+6. Appendix: Suggested Word formatting (optional)
+- Title: Centered, Bold, 16–18 pt.
+- Headings: Heading 1/2 styles.
+- Table: Fit to page width; allow rows to wrap text.
+- Page layout: Two columns; gutter 0.5 cm; top/bottom margins 2 cm.
+
